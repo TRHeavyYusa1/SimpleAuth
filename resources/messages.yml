@@ -1,24 +1,24 @@
 # SimpleAuth 1.4.0 language file
 
 join:
- message: "This server uses SimpleAuth.\nYou must authenticate to play."
- register: "You are not registered.\nPlease register using: /register <password>"
- login: "Please log in using: /login <password>"
+ message: "HeavySurvival'a Hosgeldiniz"
+ register: "Uye degilsiniz.Lutfen su komudu kullanarak kaydolun : /register <sifre>"
+ login: "Serverimize uyesiniz.Su komudu kullanarak giris yapin : /login <password>"
 
 register:
  usage: "/register <password>"
- description: "Registers an account"
- permission: "You do not have permission to use the register command!"
+ description: "Hesabiniz Kaydedildi!"
+ permission: "Senin kayit komutu kullanmana izin yok!"
  error:
-  password: "Your password is too short!"
-  registered: "This account is already registered."
-  general: "Error during authentication."
+  password: "Sifren cok kisa biraz daha uzun dene!"
+  registered: "Bu hesap zaten kayitli!"
+  general: "Kimlik dogrularken hata!"
 
 login:
  usage: "/login <password>"
  description: "Logs into an account"
- permission: "You do not have permission to use the login command!"
- success: "You have been authenticated."
+ permission: "Oturum acma komutunu kullanmak icin izniniz yok !"
+ success: "Basariyla oturumu actiniz!"
  error:
-  password: "Incorrect password!"
-  registered: "This account is not registered."
+  password: "Yanlis Sifre!Tekrar Dene!"
+  registered: "Bu hesap kayitli degil!"
